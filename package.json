@@ -1,14 +1,30 @@
 {
-  "name": "cicodeship",
+  "name": "midtest",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node_modules/.bin/mocha test.js",
+    "start": "node server.js"
+  },
+  "standard": {
+    "globals": [
+      "angular",
+      "it",
+      "describe"
+    ]
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "mocha-generators": "^1.2.0",
+    "standard": "^6.0.8",
+    "nightmare": "^2.2.0"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "chai": "^3.5.0"
+  "dependencies": {
+    "express": "^4.13.4"
+
   }
 }
